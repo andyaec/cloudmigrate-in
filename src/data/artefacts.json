@@ -1,0 +1,324 @@
+{
+  "generated": "2026-10-21",
+  "version": "v1.0",
+  "clouds": {
+    "aws": {
+      "handbook": {
+        "title": "Migration Handbook",
+        "type": "docx",
+        "description": "Phases, roles, landing-zone standards, 7R patterns, cutover, rollback, hypercare and India compliance notes.",
+        "href": "/downloads/aws/aws-migration-handbook.docx",
+        "bytes": 42865
+      },
+      "pre-checklist": {
+        "title": "Pre-Migration Checklist",
+        "type": "xlsx",
+        "description": "Wave readiness gate with owners, priorities, status drop-downs and an auto-calculated summary.",
+        "href": "/downloads/aws/aws-pre-migration-checklist.xlsx",
+        "bytes": 15245
+      },
+      "post-checklist": {
+        "title": "Post-Migration Checklist",
+        "type": "xlsx",
+        "description": "Validation, security, backup, cost and handover gate after each wave.",
+        "href": "/downloads/aws/aws-post-migration-checklist.xlsx",
+        "bytes": 12723
+      },
+      "assessment-workbook": {
+        "title": "Discovery & Assessment Workbook",
+        "type": "xlsx",
+        "description": "Server inventory, application portfolio, weighted 7R matrix, dependencies, 3-year TCO and wave plan.",
+        "href": "/downloads/aws/aws-discovery-assessment-workbook.xlsx",
+        "bytes": 17815
+      },
+      "security-checklist": {
+        "title": "Security Assessment Checklist",
+        "type": "xlsx",
+        "description": "Controls mapped to the cloud benchmark, CIS v8 and Indian regulation (DPDP, CERT-In, RBI, SEBI).",
+        "href": "/downloads/aws/aws-security-assessment-checklist.xlsx",
+        "bytes": 12974
+      },
+      "runbook-raci": {
+        "title": "Managed Services Runbook, RACI & SLA",
+        "type": "xlsx",
+        "description": "RACI, SLA matrix, recurring operations runbook, escalation matrix and monthly KPIs.",
+        "href": "/downloads/aws/aws-managed-services-runbook-raci.xlsx",
+        "bytes": 13262
+      },
+      "cutover-runbook": {
+        "title": "Cutover Runbook",
+        "type": "xlsx",
+        "description": "Timed cutover plan with go / no-go gates, rollback triggers and contact sheet.",
+        "href": "/downloads/aws/aws-cutover-runbook.xlsx",
+        "bytes": 12713
+      },
+      "poc-charter": {
+        "title": "POC Charter",
+        "type": "docx",
+        "description": "Hypothesis, measurable success criteria, scope, plan and decision record \u2014 with a worked example.",
+        "href": "/downloads/aws/aws-poc-charter.docx",
+        "bytes": 39398
+      },
+      "commercial-checklist": {
+        "title": "Commercial & Funding Checklist",
+        "type": "xlsx",
+        "description": "Qualification questions, buying-route comparison, funding tracker and commitment ladder.",
+        "href": "/downloads/aws/aws-commercial-funding-checklist.xlsx",
+        "bytes": 12648
+      }
+    },
+    "azure": {
+      "handbook": {
+        "title": "Migration Handbook",
+        "type": "docx",
+        "description": "Phases, roles, landing-zone standards, 7R patterns, cutover, rollback, hypercare and India compliance notes.",
+        "href": "/downloads/azure/azure-migration-handbook.docx",
+        "bytes": 42849
+      },
+      "pre-checklist": {
+        "title": "Pre-Migration Checklist",
+        "type": "xlsx",
+        "description": "Wave readiness gate with owners, priorities, status drop-downs and an auto-calculated summary.",
+        "href": "/downloads/azure/azure-pre-migration-checklist.xlsx",
+        "bytes": 15218
+      },
+      "post-checklist": {
+        "title": "Post-Migration Checklist",
+        "type": "xlsx",
+        "description": "Validation, security, backup, cost and handover gate after each wave.",
+        "href": "/downloads/azure/azure-post-migration-checklist.xlsx",
+        "bytes": 12687
+      },
+      "assessment-workbook": {
+        "title": "Discovery & Assessment Workbook",
+        "type": "xlsx",
+        "description": "Server inventory, application portfolio, weighted 7R matrix, dependencies, 3-year TCO and wave plan.",
+        "href": "/downloads/azure/azure-discovery-assessment-workbook.xlsx",
+        "bytes": 17827
+      },
+      "security-checklist": {
+        "title": "Security Assessment Checklist",
+        "type": "xlsx",
+        "description": "Controls mapped to the cloud benchmark, CIS v8 and Indian regulation (DPDP, CERT-In, RBI, SEBI).",
+        "href": "/downloads/azure/azure-security-assessment-checklist.xlsx",
+        "bytes": 13027
+      },
+      "runbook-raci": {
+        "title": "Managed Services Runbook, RACI & SLA",
+        "type": "xlsx",
+        "description": "RACI, SLA matrix, recurring operations runbook, escalation matrix and monthly KPIs.",
+        "href": "/downloads/azure/azure-managed-services-runbook-raci.xlsx",
+        "bytes": 13269
+      },
+      "cutover-runbook": {
+        "title": "Cutover Runbook",
+        "type": "xlsx",
+        "description": "Timed cutover plan with go / no-go gates, rollback triggers and contact sheet.",
+        "href": "/downloads/azure/azure-cutover-runbook.xlsx",
+        "bytes": 12702
+      },
+      "poc-charter": {
+        "title": "POC Charter",
+        "type": "docx",
+        "description": "Hypothesis, measurable success criteria, scope, plan and decision record \u2014 with a worked example.",
+        "href": "/downloads/azure/azure-poc-charter.docx",
+        "bytes": 39301
+      }
+    },
+    "google-cloud": {
+      "handbook": {
+        "title": "Migration Handbook",
+        "type": "docx",
+        "description": "Phases, roles, landing-zone standards, 7R patterns, cutover, rollback, hypercare and India compliance notes.",
+        "href": "/downloads/google-cloud/google-cloud-migration-handbook.docx",
+        "bytes": 42761
+      },
+      "pre-checklist": {
+        "title": "Pre-Migration Checklist",
+        "type": "xlsx",
+        "description": "Wave readiness gate with owners, priorities, status drop-downs and an auto-calculated summary.",
+        "href": "/downloads/google-cloud/google-cloud-pre-migration-checklist.xlsx",
+        "bytes": 15118
+      },
+      "post-checklist": {
+        "title": "Post-Migration Checklist",
+        "type": "xlsx",
+        "description": "Validation, security, backup, cost and handover gate after each wave.",
+        "href": "/downloads/google-cloud/google-cloud-post-migration-checklist.xlsx",
+        "bytes": 12625
+      },
+      "assessment-workbook": {
+        "title": "Discovery & Assessment Workbook",
+        "type": "xlsx",
+        "description": "Server inventory, application portfolio, weighted 7R matrix, dependencies, 3-year TCO and wave plan.",
+        "href": "/downloads/google-cloud/google-cloud-discovery-assessment-workbook.xlsx",
+        "bytes": 17809
+      },
+      "security-checklist": {
+        "title": "Security Assessment Checklist",
+        "type": "xlsx",
+        "description": "Controls mapped to the cloud benchmark, CIS v8 and Indian regulation (DPDP, CERT-In, RBI, SEBI).",
+        "href": "/downloads/google-cloud/google-cloud-security-assessment-checklist.xlsx",
+        "bytes": 12878
+      },
+      "runbook-raci": {
+        "title": "Managed Services Runbook, RACI & SLA",
+        "type": "xlsx",
+        "description": "RACI, SLA matrix, recurring operations runbook, escalation matrix and monthly KPIs.",
+        "href": "/downloads/google-cloud/google-cloud-managed-services-runbook-raci.xlsx",
+        "bytes": 13195
+      },
+      "cutover-runbook": {
+        "title": "Cutover Runbook",
+        "type": "xlsx",
+        "description": "Timed cutover plan with go / no-go gates, rollback triggers and contact sheet.",
+        "href": "/downloads/google-cloud/google-cloud-cutover-runbook.xlsx",
+        "bytes": 12701
+      },
+      "poc-charter": {
+        "title": "POC Charter",
+        "type": "docx",
+        "description": "Hypothesis, measurable success criteria, scope, plan and decision record \u2014 with a worked example.",
+        "href": "/downloads/google-cloud/google-cloud-poc-charter.docx",
+        "bytes": 39372
+      },
+      "commercial-checklist": {
+        "title": "Commercial & Funding Checklist",
+        "type": "xlsx",
+        "description": "Qualification questions, buying-route comparison, funding tracker and commitment ladder.",
+        "href": "/downloads/google-cloud/google-cloud-commercial-funding-checklist.xlsx",
+        "bytes": 12406
+      }
+    },
+    "jiocloud": {
+      "handbook": {
+        "title": "Migration Handbook",
+        "type": "docx",
+        "description": "Phases, roles, landing-zone standards, 7R patterns, cutover, rollback, hypercare and India compliance notes.",
+        "href": "/downloads/jiocloud/jiocloud-migration-handbook.docx",
+        "bytes": 42831
+      },
+      "pre-checklist": {
+        "title": "Pre-Migration Checklist",
+        "type": "xlsx",
+        "description": "Wave readiness gate with owners, priorities, status drop-downs and an auto-calculated summary.",
+        "href": "/downloads/jiocloud/jiocloud-pre-migration-checklist.xlsx",
+        "bytes": 15273
+      },
+      "post-checklist": {
+        "title": "Post-Migration Checklist",
+        "type": "xlsx",
+        "description": "Validation, security, backup, cost and handover gate after each wave.",
+        "href": "/downloads/jiocloud/jiocloud-post-migration-checklist.xlsx",
+        "bytes": 12808
+      },
+      "assessment-workbook": {
+        "title": "Discovery & Assessment Workbook",
+        "type": "xlsx",
+        "description": "Server inventory, application portfolio, weighted 7R matrix, dependencies, 3-year TCO and wave plan.",
+        "href": "/downloads/jiocloud/jiocloud-discovery-assessment-workbook.xlsx",
+        "bytes": 17854
+      },
+      "security-checklist": {
+        "title": "Security Assessment Checklist",
+        "type": "xlsx",
+        "description": "Controls mapped to the cloud benchmark, CIS v8 and Indian regulation (DPDP, CERT-In, RBI, SEBI).",
+        "href": "/downloads/jiocloud/jiocloud-security-assessment-checklist.xlsx",
+        "bytes": 13047
+      },
+      "runbook-raci": {
+        "title": "Managed Services Runbook, RACI & SLA",
+        "type": "xlsx",
+        "description": "RACI, SLA matrix, recurring operations runbook, escalation matrix and monthly KPIs.",
+        "href": "/downloads/jiocloud/jiocloud-managed-services-runbook-raci.xlsx",
+        "bytes": 13343
+      },
+      "cutover-runbook": {
+        "title": "Cutover Runbook",
+        "type": "xlsx",
+        "description": "Timed cutover plan with go / no-go gates, rollback triggers and contact sheet.",
+        "href": "/downloads/jiocloud/jiocloud-cutover-runbook.xlsx",
+        "bytes": 12768
+      },
+      "poc-charter": {
+        "title": "POC Charter",
+        "type": "docx",
+        "description": "Hypothesis, measurable success criteria, scope, plan and decision record \u2014 with a worked example.",
+        "href": "/downloads/jiocloud/jiocloud-poc-charter.docx",
+        "bytes": 39406
+      },
+      "commercial-checklist": {
+        "title": "Commercial & Funding Checklist",
+        "type": "xlsx",
+        "description": "Qualification questions, buying-route comparison, funding tracker and commitment ladder.",
+        "href": "/downloads/jiocloud/jiocloud-commercial-funding-checklist.xlsx",
+        "bytes": 12448
+      }
+    },
+    "oci": {
+      "handbook": {
+        "title": "Migration Handbook",
+        "type": "docx",
+        "description": "Phases, roles, landing-zone standards, 7R patterns, cutover, rollback, hypercare and India compliance notes.",
+        "href": "/downloads/oci/oci-migration-handbook.docx",
+        "bytes": 42787
+      },
+      "pre-checklist": {
+        "title": "Pre-Migration Checklist",
+        "type": "xlsx",
+        "description": "Wave readiness gate with owners, priorities, status drop-downs and an auto-calculated summary.",
+        "href": "/downloads/oci/oci-pre-migration-checklist.xlsx",
+        "bytes": 15125
+      },
+      "post-checklist": {
+        "title": "Post-Migration Checklist",
+        "type": "xlsx",
+        "description": "Validation, security, backup, cost and handover gate after each wave.",
+        "href": "/downloads/oci/oci-post-migration-checklist.xlsx",
+        "bytes": 12655
+      },
+      "assessment-workbook": {
+        "title": "Discovery & Assessment Workbook",
+        "type": "xlsx",
+        "description": "Server inventory, application portfolio, weighted 7R matrix, dependencies, 3-year TCO and wave plan.",
+        "href": "/downloads/oci/oci-discovery-assessment-workbook.xlsx",
+        "bytes": 17793
+      },
+      "security-checklist": {
+        "title": "Security Assessment Checklist",
+        "type": "xlsx",
+        "description": "Controls mapped to the cloud benchmark, CIS v8 and Indian regulation (DPDP, CERT-In, RBI, SEBI).",
+        "href": "/downloads/oci/oci-security-assessment-checklist.xlsx",
+        "bytes": 12927
+      },
+      "runbook-raci": {
+        "title": "Managed Services Runbook, RACI & SLA",
+        "type": "xlsx",
+        "description": "RACI, SLA matrix, recurring operations runbook, escalation matrix and monthly KPIs.",
+        "href": "/downloads/oci/oci-managed-services-runbook-raci.xlsx",
+        "bytes": 13249
+      },
+      "cutover-runbook": {
+        "title": "Cutover Runbook",
+        "type": "xlsx",
+        "description": "Timed cutover plan with go / no-go gates, rollback triggers and contact sheet.",
+        "href": "/downloads/oci/oci-cutover-runbook.xlsx",
+        "bytes": 12686
+      },
+      "poc-charter": {
+        "title": "POC Charter",
+        "type": "docx",
+        "description": "Hypothesis, measurable success criteria, scope, plan and decision record \u2014 with a worked example.",
+        "href": "/downloads/oci/oci-poc-charter.docx",
+        "bytes": 39363
+      },
+      "commercial-checklist": {
+        "title": "Commercial & Funding Checklist",
+        "type": "xlsx",
+        "description": "Qualification questions, buying-route comparison, funding tracker and commitment ladder.",
+        "href": "/downloads/oci/oci-commercial-funding-checklist.xlsx",
+        "bytes": 12372
+      }
+    }
+  }
+}

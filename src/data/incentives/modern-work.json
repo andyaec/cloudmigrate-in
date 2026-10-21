@@ -1,0 +1,584 @@
+{
+  "$comment": "AI Business Solutions (Modern Work, Copilot, Business Applications) and Security seat-based engagements. Sizes use 'min' as the inclusive seat / ACV / MAU threshold. 'min2' is a second inclusive threshold (e.g. Copilot MAU opportunity). 'reduce' is the competitor seat reduction required for conversion bonuses. Payouts in USD for Market A / B / C (CPI p.318).",
+  "programmes": [
+    {
+      "id": "cop-epoc",
+      "family": "copilot",
+      "lane": "envisioning",
+      "name": "Frontier Accelerate for Copilot: Envisioning & POC",
+      "short": "Copilot Envisioning & POC",
+      "summary": "Pre-sales needs analysis, roadmap, solution blueprint, business case and proof of concept to progress Microsoft 365 E7, M365 Copilot, Agent 365 and agent opportunities.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-m365-copilot", "copilot-jumpstart"], "text": ["Microsoft 365 Copilot specialization, OR Copilot JumpStart Ready or higher (JumpStart route valid 1 Jul – 31 Dec 2026 only; specialization required from 1 Jan 2027)"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfpSizes": ["XXS"], "text": ["Strategic 500 ineligible", "EDU and Non-profit ineligible for XXS"] },
+      "sizing": { "metric": "m365Seats", "label": "Purchased Office 365 / Microsoft 365 seats (OE3/OE5/ME3/ME5/A3/A5/G3/G5, Business Standard, Business Premium)" },
+      "sizes": [
+        { "size": "XXS", "min": 300, "hours": 10, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Copilot revenue $10K · Agent consumption $6K · Agent MAU 300" },
+        { "size": "XS", "min": 500, "hours": 20, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Copilot revenue $25K · Agent consumption $15K · Agent MAU 500" },
+        { "size": "S", "min": 1000, "hours": 40, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Copilot revenue $50K · Agent consumption $30K · Agent MAU 1,000" },
+        { "size": "M", "min": 1500, "hours": 100, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Copilot revenue $125K · Agent consumption $75K · Agent MAU 1,500" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey (include the customer's Azure Subscription ID for agent-consumption tracking)", "Invoice to Microsoft"],
+      "controls": ["Max 4 approved claims per customer tenant", "Max 1 concurrent claim per tenant"],
+      "toolkit": "https://aka.ms/Copilot-EnvisioningPoC-DeliveryGuide",
+      "source": { "doc": "cpi", "pages": [9, 10, 11] }
+    },
+    {
+      "id": "cop-da",
+      "family": "copilot",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Copilot: M365 Copilot Deployment Accelerator",
+      "short": "M365 Copilot Deployment Accelerator",
+      "summary": "Post-sales technical deployment, security and governance controls, user training and adoption / change management to grow Microsoft 365 Copilot usage and seats.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-m365-copilot", "copilot-jumpstart"], "text": ["Microsoft 365 Copilot specialization, OR Copilot JumpStart Ready+ (until 31 Dec 2026)"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfpSizes": ["XXS", "XS"], "text": ["Strategic 500 ineligible", "EDU and Non-profit ineligible for XXS and XS"] },
+      "sizing": { "metric": "copilotSeats", "metric2": "copilotMauGap", "label": "Purchased M365 Copilot seats AND incremental Copilot MAU opportunity (paid available units − monthly active users)" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "min2": 50, "hours": 10, "payout": { "A": 2500, "B": 1875, "C": 1250 }, "perf": "Copilot MAU +50" },
+        { "size": "XS", "min": 300, "min2": 300, "hours": 20, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Copilot MAU +300" },
+        { "size": "S", "min": 500, "min2": 500, "hours": 40, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Copilot MAU +500" },
+        { "size": "M", "min": 1500, "min2": 1500, "hours": 100, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Copilot MAU +1,500" },
+        { "size": "L", "min": 3000, "min2": 3000, "hours": 200, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "Copilot MAU +3,000" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Max 4 approved claims per tenant", "Max 1 concurrent claim per tenant"],
+      "toolkit": "https://aka.ms/M365Copilot-Deployment-DeliveryGuide",
+      "source": { "doc": "cpi", "pages": [12, 13, 14] }
+    },
+    {
+      "id": "cop-agent-da",
+      "family": "copilot",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Copilot: Agent Solution Deployment Accelerator",
+      "short": "Agent Solution Deployment Accelerator",
+      "summary": "Design, build, deploy and adopt agents and Power Platform solutions — agent activation, Agent 365 deployment (requires E5 or MFE), governance, custom agents and change management.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-m365-copilot", "spec-ba-finance", "spec-ba-agentic", "spec-ba-copilot", "spec-ba-sales", "spec-ba-service", "spec-ba-smb", "spec-ba-supplychain", "copilot-jumpstart"], "text": ["Microsoft 365 Copilot specialization, OR a Business Applications specialization, OR Copilot JumpStart Ready+ (until 31 Dec 2026)"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfpSizes": ["XXS", "XS"], "text": ["Strategic 500 ineligible", "EDU and Non-profit ineligible for XXS and XS"] },
+      "sizing": { "metric": "m365Seats", "label": "Purchased Office 365 / Microsoft 365 seats" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "hours": 10, "payout": { "A": 2500, "B": 1875, "C": 1250 }, "perf": "Agent consumption $7.5K · Agent MAU 50 · Power Platform MAU 50" },
+        { "size": "XS", "min": 300, "hours": 20, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Agent consumption $15K · Agent MAU 300 · Power Platform MAU 300" },
+        { "size": "S", "min": 500, "hours": 40, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Agent consumption $30K · Agent MAU 500 · Power Platform MAU 500" },
+        { "size": "M", "min": 1500, "hours": 100, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Agent consumption $75K · Agent MAU 1,500 · Power Platform MAU 1,500" },
+        { "size": "L", "min": 3000, "hours": 200, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "Agent consumption $150K · Agent MAU 3,000 · Power Platform MAU 3,000" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey (include Azure Subscription ID)", "Invoice to Microsoft"],
+      "controls": ["Max 4 approved claims per tenant", "Max 1 concurrent claim per tenant"],
+      "toolkit": "https://aka.ms/Agent-Solution-Deployment-DeliveryGuide",
+      "source": { "doc": "cpi", "pages": [15, 16, 17] }
+    },
+    {
+      "id": "cop-cowork",
+      "family": "copilot",
+      "lane": "activation",
+      "name": "Copilot Cowork CSP Activation Incentive",
+      "short": "Copilot Cowork CSP Activation",
+      "summary": "One-time CSP rebate of $50 per qualified incremental Copilot Cowork MAU when a customer below the August 2026 thresholds activates to ≥50 MAU and ≥$2,500 monthly Cowork consumption and sustains it to Month 3.",
+      "earningType": "100% indirect rebate",
+      "term": "1 September 2026 – 30 June 2027",
+      "partner": { "anyOf": ["csp-direct", "csp-indirect"], "text": ["CSP Direct Bill or Indirect Reseller authorisation", "Solutions Partner for Modern Work, Business Applications, Infrastructure, Data & AI or Digital & App Innovation (indirect resellers may use 25 capability points)", "$1M TTM revenue (direct) / $25K TTM (indirect)", "Must be TPOR for both the M365 Copilot licences and the Azure subscription carrying Cowork consumption — checked in Month 1 and Month 3"] },
+      "customer": { "excludeStrategic": true, "text": ["August 2026 baseline: fewer than 50 Cowork MAU AND less than $2,500 monthly Cowork consumption", "CSP-led: at least 50% of Copilot licence purchases and 50% of Cowork consumption via CSP", "All segments except Strategic 500; new and existing customers"] },
+      "calc": { "ratePerMau": 50, "maxUnits": 250, "maxPayout": 12500, "minPayout": 200, "activationMau": 50, "activationConsumption": 2500 },
+      "poe": ["No POE — measured from telemetry; payment 45 days after the 3-month activation window closes"],
+      "controls": ["One activation payment per customer tenant for the life of the incentive", "Qualified MAU = lesser of (Month-3 MAU − Aug MAU) and (Month-3 consumption − Aug consumption) ÷ $50, rounded down"],
+      "source": { "doc": "cpi", "pages": [18, 19, 20, 21] }
+    },
+
+    {
+      "id": "me3-epoc",
+      "family": "productivity",
+      "lane": "envisioning",
+      "name": "Frontier Accelerate for AI-Ready Productivity: ME3 Envisioning & POC",
+      "short": "ME3 Envisioning & POC",
+      "summary": "Security and compliance assessment, solution presentations, consultative services and POC / pilots to upgrade an Office 365 base to Microsoft 365 E3.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-iam", "spec-modernize-endpoints"], "text": ["Identity & Access Management OR Modernize Endpoints specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Intune seats ÷ (O365 + M365 seats) must be ≤ 50%"] },
+      "sizing": { "metric": "o365Seats", "label": "Purchased Office 365 E1/E3/E5 or Microsoft 365 Apps seats (with Intune coverage ≤ 50%)" },
+      "sizes": [
+        { "size": "XXS", "min": 300, "hours": 9, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Eligible product revenue $10K" },
+        { "size": "XS", "min": 500, "hours": 21, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Eligible product revenue $25K" },
+        { "size": "S", "min": 1000, "hours": 42, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Eligible product revenue $50K" },
+        { "size": "M", "min": 1500, "hours": 105, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Eligible product revenue $125K" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["1 approved claim per tenant", "1 concurrent claim per tenant"],
+      "toolkit": "https://aka.ms/ME3EnvisioningPoC/Download",
+      "source": { "doc": "cpi", "pages": [23, 24] }
+    },
+    {
+      "id": "me3-da",
+      "family": "productivity",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for AI-Ready Productivity: CSP ME3 Deployment Accelerator",
+      "short": "CSP ME3 Deployment Accelerator",
+      "summary": "Offsets migration, deployment and adoption cost for incremental Microsoft 365 E3 seats purchased via CSP annual / 3-year terms.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-m365-copilot", "spec-modernize-endpoints", "spec-mw-other", "spec-threat-protection", "spec-cloud-security", "spec-iam", "spec-data-security"], "text": ["Any active Modern Work specialization OR any Microsoft Security specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Incremental (net paid add) M365 E3 seats via CSP annual or 3-year term with ≥ 6 months remaining", "Like-for-like renewals, including EA → CSP, are not incremental", "Claim within 2 months of the month seats are provisioned"] },
+      "sizing": { "metric": "newMe3Seats", "label": "Incremental Microsoft 365 E3 seats bought via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "hours": 13, "payout": { "A": 2500, "B": 1875, "C": 1250 }, "perf": "Intune & Entra ID P1 MAU +4" },
+        { "size": "XS", "min": 300, "hours": 37, "payout": { "A": 8000, "B": 6000, "C": 4000 }, "perf": "Intune & Entra ID P1 MAU +30" },
+        { "size": "S", "min": 500, "hours": 60, "payout": { "A": 13000, "B": 9750, "C": 6500 }, "perf": "Intune & Entra ID P1 MAU +50" },
+        { "size": "M", "min": 1000, "hours": 116, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Intune & Entra ID P1 MAU +100" },
+        { "size": "L", "min": 1500, "hours": 185, "payout": { "A": 40000, "B": 30000, "C": 20000 }, "perf": "Intune & Entra ID P1 MAU +150" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Tenant claimable once across all sizes", "120 days from consent to deliver and submit POE"],
+      "toolkit": "https://aka.ms/CSPME3DADeliveryGuide",
+      "source": { "doc": "cpi", "pages": [25, 26] }
+    },
+    {
+      "id": "me3-conv",
+      "family": "productivity",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["me3-da"],
+      "competitors": ["google-workspace"],
+      "name": "Frontier Accelerate for AI-Ready Productivity: Conversion Bonus – ME3",
+      "short": "Conversion Bonus – ME3 (Google Workspace)",
+      "summary": "Bonus for transitioning a customer from Google Workspace to Microsoft 365 E3 — must follow a completed CSP ME3 Deployment Accelerator of the same size by the same partner.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-m365-copilot", "spec-modernize-endpoints", "spec-mw-other", "spec-threat-protection", "spec-cloud-security", "spec-iam", "spec-data-security"], "text": ["Same partner that completed the CSP ME3 Deployment Accelerator"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed CSP ME3 Deployment Accelerator on the tenant", "At least 50% of the band's minimum seats transitioned off Google Workspace", "Claim no sooner than 30 days after the Deployment Accelerator POE is approved"] },
+      "sizing": { "metric": "newMe3Seats", "metric2": "competitorSeatsReduced", "label": "Same size as the CSP ME3 DA + Google Workspace seats reduced" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "reduce": 25, "payout": { "A": 2000, "B": 1500, "C": 1000 } },
+        { "size": "XS", "min": 300, "reduce": 150, "payout": { "A": 6400, "B": 4800, "C": 3200 } },
+        { "size": "S", "min": 500, "reduce": 250, "payout": { "A": 10400, "B": 7800, "C": 5200 } },
+        { "size": "M", "min": 1000, "reduce": 500, "payout": { "A": 20000, "B": 15000, "C": 10000 } },
+        { "size": "L", "min": 1500, "reduce": 750, "payout": { "A": 32000, "B": 24000, "C": 16000 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before and after screenshots of the Google Workspace admin dashboard showing solution name, customer name, date, seat counts, evidence obtained from the customer and ≥50% seat transition"],
+      "controls": ["1 approved claim per tenant", "1 concurrent claim per tenant"],
+      "source": { "doc": "cpi", "pages": [31, 32] }
+    },
+    {
+      "id": "bp-da",
+      "family": "productivity",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for AI-Ready Productivity: CSP BP Deployment Accelerator",
+      "short": "CSP Business Premium Deployment Accelerator",
+      "summary": "Offsets deployment and adoption cost for 50+ incremental Microsoft 365 Business Premium seats bought via CSP.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["sp-modern-work"], "text": ["Active Solutions Partner for Modern Work designation"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Incremental Business Premium seats via CSP annual / 3-year term with ≥ 6 months remaining"] },
+      "sizing": { "metric": "newBpSeats", "label": "Incremental Business Premium seats bought via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "hours": 10, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Intune & Entra ID P1 MAU +4" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Tenant claimable once", "120 days from consent to POE"],
+      "toolkit": "https://aka.ms/CSPBPDADeliveryGuide",
+      "source": { "doc": "cpi", "pages": [27, 28] }
+    },
+    {
+      "id": "bp-conv",
+      "family": "productivity",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["bp-da"],
+      "competitors": ["google-workspace"],
+      "name": "Frontier Accelerate for AI-Ready Productivity: Conversion Bonus – BP",
+      "short": "Conversion Bonus – Business Premium (Google Workspace)",
+      "summary": "Bonus for moving a customer from Google Workspace to Business Premium, following a completed CSP BP Deployment Accelerator.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["sp-modern-work"], "text": ["Same partner that completed the CSP BP Deployment Accelerator"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed CSP BP Deployment Accelerator on the tenant", "25+ Google Workspace seats reduced", "Claim ≥ 30 days after DA POE approval"] },
+      "sizing": { "metric": "newBpSeats", "metric2": "competitorSeatsReduced", "label": "50+ BP seats and 25+ Google Workspace seats reduced" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "reduce": 25, "payout": { "A": 1600, "B": 1500, "C": 1000 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before / after Google Workspace dashboard screenshots"],
+      "controls": ["1 approved claim per tenant"],
+      "source": { "doc": "cpi", "pages": [29, 30] }
+    },
+    {
+      "id": "w365-epoc",
+      "family": "productivity",
+      "lane": "envisioning",
+      "name": "Frontier Accelerate for AI-Ready Productivity: Cloud Endpoints Envisioning & POC",
+      "short": "Cloud Endpoints (Windows 365) Envisioning & POC",
+      "summary": "Persona discovery, solution design, POC and pilots for moving endpoints to the cloud with Windows 365.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-modernize-endpoints"], "text": ["Modernize Endpoints specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Intune usage ≥ 40% (Intune MAU ÷ Intune PAU)"] },
+      "sizing": { "metric": "w11IntuneSeats", "label": "Purchased Windows 11 Enterprise + Intune seats (with ≥ 40% Intune MAU)" },
+      "sizes": [
+        { "size": "XXS", "min": 300, "hours": 9, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Windows 365 revenue $10K or AVD consumption $6K" },
+        { "size": "XS", "min": 500, "hours": 21, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Windows 365 revenue $25K or AVD consumption $15K" },
+        { "size": "S", "min": 1000, "hours": 43, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Windows 365 revenue $50K or AVD consumption $30K" },
+        { "size": "M", "min": 1500, "hours": 108, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "Windows 365 revenue $125K or AVD consumption $75K" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["1 approved claim per tenant"],
+      "toolkit": "https://aka.ms/CloudEndpointsEnvisioningPOC/Download",
+      "source": { "doc": "cpi", "pages": [33, 34] }
+    },
+    {
+      "id": "w365-da",
+      "family": "productivity",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for AI-Ready Productivity: CSP W365 Deployment Accelerator",
+      "short": "CSP Windows 365 Deployment Accelerator",
+      "summary": "Offsets migration and adoption cost for incremental Windows 365 seats (Enterprise, Government, Flex, Business, for Agents, Reserve) via CSP.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-modernize-endpoints"], "text": ["Modernize Endpoints specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Incremental Windows 365 seats via CSP annual / 3-year term with ≥ 6 months remaining"] },
+      "sizing": { "metric": "newW365Seats", "label": "Incremental Windows 365 seats bought via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "hours": 13, "payout": { "A": 2500, "B": 1875, "C": 1250 }, "perf": "Windows 365 MAU +4" },
+        { "size": "XS", "min": 300, "hours": 23, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Windows 365 MAU +30" },
+        { "size": "S", "min": 500, "hours": 46, "payout": { "A": 10000, "B": 7500, "C": 5000 }, "perf": "Windows 365 MAU +50" },
+        { "size": "M", "min": 1000, "hours": 92, "payout": { "A": 20000, "B": 15000, "C": 10000 }, "perf": "Windows 365 MAU +100" },
+        { "size": "L", "min": 1500, "hours": 139, "payout": { "A": 30000, "B": 22500, "C": 15000 }, "perf": "Windows 365 MAU +150" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Tenant claimable once across all sizes"],
+      "toolkit": "https://aka.ms/CSPW365DADeliveryGuide",
+      "source": { "doc": "cpi", "pages": [35, 36, 37] }
+    },
+
+    {
+      "id": "sec-epoc-me",
+      "family": "security",
+      "lane": "envisioning",
+      "name": "Frontier Accelerate for Security: Envisioning & POC ME3/ME5",
+      "short": "Security Envisioning & POC — ME3 / ME5",
+      "summary": "Zero Trust Workshop assessment and roadmap plus hands-on configuration modules in production, a 2–3 week data-collection period, joint findings review and final report — targeting ME3/ME5 customers.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Cloud Security, Identity & Access Management, Threat Protection or Data Security specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Microsoft 365 E3 with Entra P1 seats at 80%+ MAU, OR Microsoft 365 E5 seats", "Tenants with 3+ security workshops claimed in FY26 are excluded"] },
+      "sizing": { "metric": "me35Seats", "label": "M365 E3 (with Entra P1 at ≥80% MAU) or M365 E5 seats" },
+      "sizes": [
+        { "size": "XXS", "min": 300, "hours": 20, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Security ARR $5K and/or Security ACR $5K" },
+        { "size": "XS", "min": 500, "hours": 40, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Security ARR / ACR $12.5K" },
+        { "size": "S", "min": 1000, "hours": 62, "payout": { "A": 8000, "B": 6000, "C": 4000 }, "perf": "Security ARR / ACR $20K" },
+        { "size": "M", "min": 1500, "hours": 86, "payout": { "A": 15000, "B": 11250, "C": 7500 }, "perf": "Security ARR / ACR $37.5K" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Combined cap with OE3/EMS version: 2 approved claims per tenant per FY, 1 concurrent", "90 days from consent to POE", "Max 50 concurrent active Security claims per partner"],
+      "toolkit": "https://aka.ms/FrontierAccelerateforSecurityEnvisioningAndPOC/Resources",
+      "source": { "doc": "cpi", "pages": [53, 54, 57] }
+    },
+    {
+      "id": "sec-epoc-oe3",
+      "family": "security",
+      "lane": "envisioning",
+      "name": "Frontier Accelerate for Security: Envisioning & POC OE3/EMS",
+      "short": "Security Envisioning & POC — OE3 / EMS",
+      "summary": "The same Zero Trust envisioning and configuration-module engagement targeted at Office 365 E3 + EMS customers to identify upsell opportunities.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Cloud Security, Identity & Access Management, Threat Protection or Data Security specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Office 365 E3 & EMS with Entra P1 seats at 80%+ MAU"] },
+      "sizing": { "metric": "oe3EmsSeats", "label": "Office 365 E3 + EMS seats (Entra P1 at ≥80% MAU)" },
+      "sizes": [
+        { "size": "XXS", "min": 300, "hours": 20, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "Security ARR / ACR $5K" },
+        { "size": "XS", "min": 500, "hours": 40, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "Security ARR / ACR $12.5K" },
+        { "size": "S", "min": 1000, "hours": 62, "payout": { "A": 8000, "B": 6000, "C": 4000 }, "perf": "Security ARR / ACR $20K" },
+        { "size": "M", "min": 1500, "hours": 86, "payout": { "A": 15000, "B": 11250, "C": 7500 }, "perf": "Security ARR / ACR $37.5K" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice to Microsoft"],
+      "controls": ["Combined cap with ME3/ME5 version: 2 approved per tenant per FY"],
+      "source": { "doc": "cpi", "pages": [55, 56, 57] }
+    },
+    {
+      "id": "sec-me5-da",
+      "family": "security",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Security: CSP ME5/ME7 Deployment Accelerator",
+      "short": "CSP ME5 / ME7 Deployment Accelerator",
+      "summary": "Offsets the cost of migrating, deploying and adopting incremental Microsoft 365 E5 / E7 seats bought via CSP; success is measured in Monthly Protected Users.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Cloud Security, Identity & Access Management, Threat Protection or Data Security specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Nominate before the sale or within 2 months of provisioning", "New ME5/ME7 seats via CSP annual / 3-year term with ≥ 6 months remaining"] },
+      "sizing": { "metric": "newMe5Seats", "label": "New Microsoft 365 E5 / E7 seats via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "payout": { "A": 3000, "B": 2250, "C": 1500 }, "perf": "5 MPU" },
+        { "size": "XS", "min": 300, "payout": { "A": 15000, "B": 11250, "C": 7500 }, "perf": "30 MPU" },
+        { "size": "S", "min": 500, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "50 MPU" },
+        { "size": "M", "min": 1000, "payout": { "A": 40000, "B": 30000, "C": 20000 }, "perf": "100 MPU" },
+        { "size": "L", "min": 1500, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "150 MPU" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Proof of new 50+ seat ME5/ME7 purchase"],
+      "controls": ["1 approved claim per tenant per FY; 1 concurrent", "120 days from consent to POE"],
+      "source": { "doc": "cpi", "pages": [60, 61, 62] }
+    },
+    {
+      "id": "sec-dp-da",
+      "family": "security",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Security: CSP Defender/Purview Suites Deployment Accelerator",
+      "short": "CSP Defender / Purview Suites Deployment Accelerator",
+      "summary": "Offsets deployment and adoption of incremental Microsoft Defender Suite and/or Purview Suite seats bought via CSP.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Cloud Security, IAM, Threat Protection or Data Security specialization"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "New Defender Suite / Purview Suite seats via CSP annual / 3-year term"] },
+      "sizing": { "metric": "newDpSeats", "label": "New Defender Suite / Purview Suite seats via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "5 MPU" },
+        { "size": "XS", "min": 300, "payout": { "A": 3500, "B": 2625, "C": 1750 }, "perf": "30 MPU" },
+        { "size": "S", "min": 500, "payout": { "A": 5500, "B": 4125, "C": 2750 }, "perf": "50 MPU" },
+        { "size": "M", "min": 1000, "payout": { "A": 11500, "B": 8625, "C": 5750 }, "perf": "100 MPU" },
+        { "size": "L", "min": 1500, "payout": { "A": 17000, "B": 12750, "C": 8500 }, "perf": "150 MPU" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Proof of new 50+ seat purchase"],
+      "controls": ["1 approved claim per tenant per FY; 1 concurrent"],
+      "source": { "doc": "cpi", "pages": [63, 64, 65] }
+    },
+    {
+      "id": "sec-bp-dp-da",
+      "family": "security",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Security: CSP BP Defender/Purview Suites Deployment Accelerator",
+      "short": "CSP Defender / Purview Suites for Business Premium Deployment Accelerator",
+      "summary": "Deployment and adoption of 50+ incremental Defender / Purview Suite for Business Premium seats via CSP.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["sp-security"], "text": ["Active Solutions Partner for Security designation"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU"] },
+      "sizing": { "metric": "newBpDpSeats", "label": "New Defender / Purview Suite for Business Premium seats via CSP" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "payout": { "A": 2000, "B": 1500, "C": 1000 }, "perf": "5 MPU" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Proof of new seat purchase"],
+      "controls": ["1 approved claim per tenant per FY"],
+      "source": { "doc": "cpi", "pages": [66, 67, 68] }
+    },
+    {
+      "id": "sec-conv-me5",
+      "family": "security",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["sec-me5-da"],
+      "competitors": ["crowdstrike", "proofpoint"],
+      "name": "Frontier Accelerate for Security: Conversion Bonus – ME5/ME7",
+      "short": "Conversion Bonus – ME5 / ME7 (CrowdStrike / Proofpoint)",
+      "summary": "Bonus for displacing CrowdStrike and/or Proofpoint with Microsoft 365 E5 / E7, following a completed CSP ME5/ME7 Deployment Accelerator of the same size.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Same partner that completed the CSP ME5/ME7 Deployment Accelerator"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed CSP ME5/ME7 Deployment Accelerator", "Qualifying platform: CrowdStrike or Proofpoint", "≥ 50% of the band's minimum seats transitioned off the qualifying platform", "Claim ≥ 30 days after DA POE approval; 90 days to submit POE"] },
+      "sizing": { "metric": "newMe5Seats", "metric2": "competitorSeatsReduced", "label": "ME5/ME7 DA size + competitor seats transitioned" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "reduce": 25, "payout": { "A": 2400, "B": 1800, "C": 1200 } },
+        { "size": "XS", "min": 300, "reduce": 150, "payout": { "A": 12000, "B": 9000, "C": 6000 } },
+        { "size": "S", "min": 500, "reduce": 250, "payout": { "A": 20000, "B": 15000, "C": 10000 } },
+        { "size": "M", "min": 1000, "reduce": 500, "payout": { "A": 32000, "B": 24000, "C": 16000 } },
+        { "size": "L", "min": 1500, "reduce": 750, "payout": { "A": 40000, "B": 30000, "C": 20000 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before / after qualifying-platform dashboard screenshots evidencing ≥50% seat transition"],
+      "controls": ["1 approved claim per tenant per FY", "Excluded from partner performance measurement"],
+      "source": { "doc": "cpi", "pages": [70, 71, 72] }
+    },
+    {
+      "id": "sec-conv-dp",
+      "family": "security",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["sec-dp-da"],
+      "competitors": ["crowdstrike"],
+      "name": "Frontier Accelerate for Security: Conversion Bonus – Defender & Purview",
+      "short": "Conversion Bonus – Defender & Purview (CrowdStrike)",
+      "summary": "Bonus for displacing CrowdStrike with Defender / Purview Suites, following a completed CSP Defender/Purview Suites Deployment Accelerator.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "text": ["Same partner as the qualifying Deployment Accelerator"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed CSP Defender/Purview Suites DA", "Qualifying platform: CrowdStrike", "≥ 50% of band's minimum seats transitioned"] },
+      "sizing": { "metric": "newDpSeats", "metric2": "competitorSeatsReduced", "label": "DA size + CrowdStrike seats transitioned" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "reduce": 25, "payout": { "A": 1600, "B": 1200, "C": 800 } },
+        { "size": "XS", "min": 300, "reduce": 150, "payout": { "A": 2800, "B": 2100, "C": 1400 } },
+        { "size": "S", "min": 500, "reduce": 250, "payout": { "A": 4400, "B": 3300, "C": 2200 } },
+        { "size": "M", "min": 1000, "reduce": 500, "payout": { "A": 9200, "B": 6900, "C": 4600 } },
+        { "size": "L", "min": 1500, "reduce": 750, "payout": { "A": 13600, "B": 10200, "C": 6800 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before / after CrowdStrike dashboard screenshots"],
+      "controls": ["1 approved claim per tenant per FY", "Excluded from partner performance measurement"],
+      "source": { "doc": "cpi", "pages": [73, 74, 75] }
+    },
+    {
+      "id": "sec-conv-bp",
+      "family": "security",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["sec-bp-dp-da"],
+      "competitors": ["sentinelone"],
+      "name": "Frontier Accelerate for Security: Conversion Bonus – Defender & Purview BP",
+      "short": "Conversion Bonus – Defender & Purview BP (SentinelOne)",
+      "summary": "Bonus for displacing SentinelOne with Defender / Purview Suites for Business Premium after the matching BP Deployment Accelerator.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["sp-security"], "text": ["Solutions Partner for Security designation; same partner as the BP DA"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed CSP BP Defender/Purview Suites DA", "Qualifying platform: SentinelOne; 25+ seats transitioned"] },
+      "sizing": { "metric": "newBpDpSeats", "metric2": "competitorSeatsReduced", "label": "50+ BP Defender/Purview seats + 25+ SentinelOne seats transitioned" },
+      "sizes": [
+        { "size": "XXS", "min": 50, "reduce": 25, "payout": { "A": 1600, "B": 1200, "C": 800 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before / after SentinelOne dashboard screenshots"],
+      "controls": ["1 approved claim per tenant per FY"],
+      "source": { "doc": "cpi", "pages": [76, 77] }
+    },
+    {
+      "id": "sec-ua-ds",
+      "family": "security",
+      "lane": "usage",
+      "name": "Frontier Accelerate for Security: ME5 Usage Accelerator – Data Security",
+      "short": "ME5 Usage Accelerator – Data Security (Purview)",
+      "summary": "Post-sales usage play for at-risk E5 customers: deploy Purview Information Protection P2 and Insider Risk Management into production ahead of renewal.",
+      "earningType": "Fee",
+      "partner": { "allOf": ["mxdr-verified", "misa-member"], "minOf": { "of": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "n": 3 }, "text": ["MXDR verified practice", "MISA member", "Three or more of: Cloud Security, IAM, Threat Protection, Data Security specializations", "Eligible partner list refreshed quarterly"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "usage": { "maxPct": 50, "workload": "Data Security" }, "text": ["Non-unified-support EA customers with commercial E5", "Renewal due in FY27 or FY28", "Data Security usage below 50% MPU of PAU"] },
+      "sizing": { "metric": "mpuWhitespaceDs", "label": "Data Security MPU whitespace (PAU − MPU)" },
+      "sizes": [
+        { "size": "XXS", "min": 500, "payout": { "A": 4500, "B": 3375, "C": 2250 }, "perf": "+500 MPU" },
+        { "size": "XS", "min": 2000, "payout": { "A": 12000, "B": 9000, "C": 6000 }, "perf": "+2,000 MPU" },
+        { "size": "S", "min": 5000, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "+5,000 MPU" },
+        { "size": "M", "min": 10000, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "+10,000 MPU" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice"],
+      "controls": ["One-time lifetime claim per tenant per workload (does not reset each FY)", "90 days from consent to POE"],
+      "source": { "doc": "cpi", "pages": [79, 80, 83, 92] }
+    },
+    {
+      "id": "sec-ua-xdr",
+      "family": "security",
+      "lane": "usage",
+      "name": "Frontier Accelerate for Security: ME5 Usage Accelerator – XDR",
+      "short": "ME5 Usage Accelerator – XDR (Defender)",
+      "summary": "Post-sales usage play for at-risk E5 customers: drive integrated SOC usage of Defender for Endpoint, Office 365, Identity, Cloud Apps and Entra ID P2.",
+      "earningType": "Fee",
+      "partner": { "allOf": ["mxdr-verified", "misa-member"], "minOf": { "of": ["spec-cloud-security", "spec-iam", "spec-threat-protection", "spec-data-security"], "n": 3 }, "text": ["MXDR verified practice", "MISA member", "Three or more security specializations"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "usage": { "maxPct": 40, "workload": "Defender" }, "text": ["Non-unified-support EA customers with commercial E5", "Renewal due in FY27 or FY28", "Defender usage below 40% MPU of PAU"] },
+      "sizing": { "metric": "mpuWhitespaceXdr", "label": "Defender / XDR MPU whitespace (PAU − MPU)" },
+      "sizes": [
+        { "size": "XXS", "min": 500, "payout": { "A": 4500, "B": 3375, "C": 2250 }, "perf": "+500 MPU" },
+        { "size": "XS", "min": 2000, "payout": { "A": 12000, "B": 9000, "C": 6000 }, "perf": "+2,000 MPU" },
+        { "size": "S", "min": 5000, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "+5,000 MPU" },
+        { "size": "M", "min": 10000, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "+10,000 MPU" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice"],
+      "controls": ["One-time lifetime claim per tenant per workload"],
+      "source": { "doc": "cpi", "pages": [81, 82, 83, 93] }
+    },
+
+    {
+      "id": "ba-da",
+      "family": "bizapps",
+      "lane": "deployment",
+      "name": "Frontier Accelerate for Business Processes: CSP Deployment Accelerator",
+      "short": "Business Apps CSP Deployment Accelerator (D365)",
+      "summary": "Post-sales engagement offsetting the cost of migrating, deploying and driving adoption of incremental Dynamics 365 annual contract value bought via CSP.",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-ba-finance", "spec-ba-agentic", "spec-ba-copilot", "spec-ba-sales", "spec-ba-service", "spec-ba-smb", "spec-ba-supplychain", "deployment-voucher"], "text": ["Business Applications specialization (Finance, Agentic Business Solutions, Copilot, Sales, Service, SMB Management, Supply Chain) OR Deployment Voucher partner as of 30 Jun 2026"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "cspNewSeats": true, "text": ["Excludes Strategic 500, Non-profit and EDU", "Incremental D365 ACV via CSP annual / 3-year term (≥ 6 months remaining)", "Eligible: Business Central, Commerce, Contact Center, Customer Insights, Customer Service, Field Service, Finance, Human Resources, Project Operations, Sales, Supply Chain"] },
+      "sizing": { "metric": "d365Acv", "label": "Incremental annual contract value of eligible Dynamics 365 products (USD)" },
+      "sizes": [
+        { "size": "XXS", "min": 20000, "payout": { "A": 5000, "B": 3750, "C": 2500 }, "perf": "D365 MAU +4" },
+        { "size": "XS", "min": 50000, "payout": { "A": 12500, "B": 9375, "C": 6250 }, "perf": "D365 MAU +8" },
+        { "size": "S", "min": 100000, "payout": { "A": 25000, "B": 18750, "C": 12500 }, "perf": "D365 MAU +12" },
+        { "size": "M", "min": 200000, "payout": { "A": 50000, "B": 37500, "C": 25000 }, "perf": "D365 MAU +20" },
+        { "size": "L", "min": 400000, "payout": { "A": 100000, "B": 75000, "C": 50000 }, "perf": "D365 MAU +40" }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice in USD", "Payouts above $50K also need one execution artefact (design document, implementation plan or PPAC deployment evidence) AND one impact artefact (training / adoption evidence or executive completion report)"],
+      "controls": ["Max 2 approved claims per tenant; 1 concurrent", "Tenant claimable once across sizes"],
+      "toolkit": "https://aka.ms/CSPDeploymentAcceleratorDeliveryGuide",
+      "source": { "doc": "cpi", "pages": [39, 40, 41] }
+    },
+    {
+      "id": "ba-conv",
+      "family": "bizapps",
+      "lane": "conversion",
+      "kind": "bonus",
+      "requires": ["ba-da"],
+      "competitors": ["salesforce", "sap", "genesys"],
+      "name": "Frontier Accelerate for Business Processes: Conversion Bonus",
+      "short": "Business Apps Conversion Bonus (Salesforce / SAP / Genesys)",
+      "summary": "Bonus for transitioning customers from Genesys (→ Contact Center), Salesforce (→ Customer Insights, Customer Service, Field Service, Sales) or SAP (→ Business Central, Commerce, CI, Field Service, Finance, HR, Project Ops, Sales, Supply Chain).",
+      "earningType": "Fee",
+      "partner": { "anyOf": ["spec-ba-finance", "spec-ba-agentic", "spec-ba-copilot", "spec-ba-sales", "spec-ba-service", "spec-ba-smb", "spec-ba-supplychain", "deployment-voucher"], "text": ["Same partner that completed the Business Processes CSP Deployment Accelerator"] },
+      "customer": { "excludeStrategic": true, "excludeEduNfp": true, "text": ["Completed Business Processes CSP Deployment Accelerator of the same size", "Evidence the qualifying solution was in active use", "Claim ≥ 30 days after DA POE approval"] },
+      "sizing": { "metric": "d365Acv", "metric2": "competitorSeatsReduced", "label": "DA ACV band + competitor seats transitioned" },
+      "sizes": [
+        { "size": "XXS", "min": 20000, "reduce": 13, "payout": { "A": 4000, "B": 3000, "C": 2000 } },
+        { "size": "XS", "min": 50000, "reduce": 25, "payout": { "A": 10000, "B": 7500, "C": 5000 } },
+        { "size": "S", "min": 100000, "reduce": 50, "payout": { "A": 20000, "B": 15000, "C": 10000 } },
+        { "size": "M", "min": 200000, "reduce": 100, "payout": { "A": 40000, "B": 30000, "C": 20000 } },
+        { "size": "L", "min": 400000, "reduce": 200, "payout": { "A": 80000, "B": 60000, "C": 40000 } }
+      ],
+      "poe": ["Customer Attestation", "Partner Survey", "Invoice", "Before / after screenshots of the Salesforce / SAP / Genesys dashboard with seat counts"],
+      "controls": ["1 approved claim per tenant"],
+      "source": { "doc": "cpi", "pages": [42, 43] }
+    }
+  ],
+
+  "cpor": {
+    "id": "ba-cpor",
+    "name": "Biz Apps Presales Advisor Incentive (prev. OSA) — Claiming Partner of Record",
+    "short": "Biz Apps Presales Advisor (CPOR)",
+    "term": "1 October 2025 – 30 September 2026 (ended — confirm FY27 terms)",
+    "summary": "Pays a fixed fee per net paid seat above the tenant + workload High-Water Mark for partners whose pre-sales work influenced a Dynamics 365 platform sale under EA / MCA-E. CSP is not eligible.",
+    "eligibility": ["Solutions Partner for Business Applications", "Enterprise Agreement or MCA-E licensing (CSP ineligible)", "Claim via CPOR in Partner Center within 120 days of the transaction", "Only one partner of record per subscription; conflicting claims decided on proof of execution"],
+    "rates": [
+      { "id": "fscm", "label": "D365 Finance & Supply Chain (incl. Business Central)", "unit": "seat", "ENT": 250, "SMC": 250 },
+      { "id": "ce", "label": "D365 Customer Engagement (Sales & Service)", "unit": "seat", "ENT": 20, "SMC": 80 },
+      { "id": "activity", "label": "Activity & Device", "unit": "seat", "ENT": 75, "SMC": 175 },
+      { "id": "csu-basic", "label": "Basic Commerce Scale Units (65 bundle)", "unit": "bundle", "ENT": 4875, "SMC": 11375 },
+      { "id": "csu-standard", "label": "Standard Commerce Scale Units (225 bundle)", "unit": "bundle", "ENT": 16875, "SMC": 39375 },
+      { "id": "csu-premium", "label": "Premium Commerce Scale Units (500 bundle)", "unit": "bundle", "ENT": 37500, "SMC": 87500 }
+    ],
+    "rules": ["Payment = net paid seat growth above the High-Water Mark × rate card", "HWM tracked at tenant + workload level; renewals do not pay on existing seats", "Seats returned within 120 days can be clawed back; licensing-method changes within 12 months can be recovered", "Excluded: Team Members, Storage, Low Code, Copilot, trials", "Segment ENT = Strategic & Major; SMC = Corporate & SMB (Enterprise rate applies if in both)"],
+    "source": { "doc": "cpi", "pages": [44, 45, 46, 47, 48, 49] }
+  },
+
+  "csp": {
+    "term": "1 July 2026 – 30 June 2027",
+    "earningType": "60% rebate / 40% co-op (Dragon Copilot 100% rebate)",
+    "m365": {
+      "direct": [
+        { "id": "core", "label": "M365 CSP Core (all eligible MW & Security billed revenue)", "rate": 0.025, "cap": 62500 },
+        { "id": "t2", "label": "Strategic Tier 2 — M365 E5, E7, Agent 365, M365 Copilot, Copilot Studio", "rate": 0.07, "cap": 175000 },
+        { "id": "t1", "label": "Strategic Tier 1 — Business Premium, M365 E3, Copilot Business & bundles, Defender Suite, Purview Suite (+ BP versions)", "rate": 0.025, "cap": 62500 },
+        { "id": "pstn", "label": "Calling & Conferencing PSTN", "rate": 0.20, "cap": null },
+        { "id": "growth", "label": "M365 CSP Growth Accelerator (YoY tenant growth on Tier 1/2 + Windows 365)", "rate": 0.10, "cap": 250000 }
+      ],
+      "indirect": [
+        { "id": "core", "label": "M365 CSP Core", "rate": 0, "cap": null },
+        { "id": "t2", "label": "Strategic Tier 2 — M365 E5, E7, Agent 365, M365 Copilot, Copilot Studio", "rate": 0.07, "cap": 175000 },
+        { "id": "t1", "label": "Strategic Tier 1 — Business Premium, M365 E3, Copilot Business & bundles, Defender Suite, Purview Suite (+ BP versions)", "rate": 0.025, "cap": 62500 },
+        { "id": "pstn", "label": "Calling & Conferencing PSTN", "rate": 0.20, "cap": null },
+        { "id": "growth", "label": "M365 CSP Growth Accelerator", "rate": 0.125, "cap": 312500 }
+      ],
+      "eligibility": { "direct": ["Solutions Partner for Modern Work or Security", "$1M TTM revenue"], "indirect": ["Solutions Partner for Modern Work or Security, or 25 capability points", "$25K TTM revenue"] },
+      "emergingMarketBusinessStandard": { "direct": 0.05, "indirect": 0.0625, "note": "From 1 Aug 2026 Business Standard earns the growth accelerator at a reduced rate in emerging markets (incl. India)." }
+    },
+    "d365": {
+      "direct": [
+        { "id": "core", "label": "D365 CSP Core", "rate": 0.025, "cap": null },
+        { "id": "t2", "label": "Strategic Tier 2 — Business Central", "rate": 0.07, "cap": null },
+        { "id": "t1", "label": "Strategic Tier 1 — Supply Chain, Finance, Project Operations, Human Resources", "rate": 0.06, "cap": null },
+        { "id": "growth", "label": "D365 CSP Growth Accelerator (Tier 1/2 + Sales + Customer Insights)", "rate": 0.10, "cap": null }
+      ],
+      "indirect": [
+        { "id": "core", "label": "D365 CSP Core", "rate": 0, "cap": null },
+        { "id": "t2", "label": "Strategic Tier 2 — Business Central", "rate": 0.07, "cap": null },
+        { "id": "t1", "label": "Strategic Tier 1 — Supply Chain, Finance, Project Operations, Human Resources", "rate": 0.06, "cap": null },
+        { "id": "growth", "label": "D365 CSP Growth Accelerator", "rate": 0.125, "cap": null }
+      ],
+      "eligibility": { "direct": ["Solutions Partner for Business Applications", "$1M TTM revenue"], "indirect": ["Solutions Partner for Business Applications or 25 capability points", "$25K TTM revenue"] }
+    },
+    "growthRules": [
+      "Growth is YoY increase in monthly billed revenue at tenant level, measured per solution area; the baseline is all prior-year tenant revenue including EA and other partners.",
+      "Positive growth must exist at total-tenant level before any growth accelerator pays; it then pays only on the strategic products driving it.",
+      "Prepaid billing is normalised to MRR; for 3-year CSP SKUs only the first 12 months count as growth.",
+      "Change of Channel Partner removes Core and Strategic accelerator eligibility for 12 months."
+    ],
+    "source": { "doc": "cpi", "pages": [202, 204, 215, 216, 217, 222, 223, 224, 232] }
+  },
+
+  "performance": {
+    "portfolioRate": 0.33,
+    "milestones": ["3-month grace from POE", "Milestone 1: 25% of goal", "Milestone 2: 50%", "Milestone 3: 75%", "Milestone 4: 100% within 12 months"],
+    "notes": ["Portfolio performance rate (successful ÷ completed engagements) must stay at or above 33% per engagement type", "Evaluated monthly once at least three engagements complete; 30 days' notice before a pause", "Baseline = customer consent month"],
+    "source": { "doc": "cpi", "pages": [297, 298, 299] }
+  }
+}

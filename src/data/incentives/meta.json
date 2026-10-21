@@ -1,0 +1,41 @@
+{
+  "fiscalYear": "FY27",
+  "investmentTerm": "1 July 2026 – 30 June 2027",
+  "lastReviewed": "2026-10-21",
+  "sources": {
+    "cpi": {
+      "title": "Microsoft Commercial Partner Incentives Guide (en-US)",
+      "edition": "Exported 3 September 2026",
+      "pages": 365,
+      "authority": "Primary — governs where documents disagree"
+    },
+    "mci": {
+      "title": "FY27 Frontier Accelerate MCI Guide (AMM summary deck, 2026–2027)",
+      "edition": "29-slide summary incl. India (Market C) Security tables",
+      "pages": 29,
+      "authority": "Summary — used for quick reference and India-specific tables"
+    }
+  },
+  "discrepancies": [
+    {
+      "topic": "Post-sales ACR success rate",
+      "detail": "The CPI guide (pp. 100, 312) requires partners to meet the minimum incremental ACR on at least 60% of Partner Nominated post-sales claims. The MCI summary deck headline states 80% (slides 14, 16) but its own governance slide repeats 60% for Partner Nominated offers. The advisor uses 60%; 80% is shown as the Marketplace governance monitor."
+    },
+    {
+      "topic": "Core M&M with MDC / Sentinel nomination threshold",
+      "detail": "Specialized offer text says ≥40% of incremental ACR on MDC/Sentinel (p. 129); the SMB offer says ≥4% (p. 165). The published MDC ACR minimums ($200 on $5K … $10K on $250K) equal 4% of each band floor, so the advisor tests the dollar minimum and flags the 40% wording."
+    },
+    {
+      "topic": "AI Apps, Agents & Developer XXS Market B",
+      "detail": "CPI guide p. 135 lists $2,000 for both Market A and Market B at XXS, unlike every other standard ladder ($1,600). The advisor shows the guide value and flags it."
+    },
+    {
+      "topic": "Defender for Cloud Deployment Accelerator — India table",
+      "detail": "The MCI deck India slide repeats the Sentinel payout table for MDC. The CPI guide (p. 89) sets MDC S/M/L Stage 1 lower than Sentinel (Market C: $3,750 / $8,750 / $18,750). The advisor uses the CPI guide."
+    },
+    {
+      "topic": "Enterprise and Biz Apps Presales Advisor terms",
+      "detail": "Both engagements in the guide run 1 Oct 2025 – 30 Sep 2026, which has now ended. FY27 terms had not been published in the 3 Sep 2026 export. Treat these calculators as indicative until the next guide drop."
+    }
+  ]
+}

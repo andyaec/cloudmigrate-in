@@ -1,0 +1,14 @@
+{
+  "$comment": "Market tiers. Azure (Cloud & AI Platforms + Marketplace) use A/B only (CPI p.100 et al). Modern Work & Security activity engagements use A/B/C (CPI p.318). Payout currency is USD based on the country of the claiming Partner Location ID.",
+  "azure": {
+    "A": ["Australia", "Austria", "Belgium", "Canada", "Denmark", "Finland", "France", "Germany", "Iceland", "Ireland", "Italy", "Japan", "Luxembourg", "Netherlands", "New Zealand", "Norway", "Spain", "Sweden", "Switzerland", "United Kingdom", "United States"],
+    "default": "B"
+  },
+  "mw": {
+    "A": ["Australia", "Austria", "Belgium", "Canada", "Denmark", "Finland", "France", "Germany", "Iceland", "Ireland", "Italy", "Japan", "Luxembourg", "Netherlands", "New Zealand", "Norway", "Portugal", "Spain", "Sweden", "Switzerland", "United Kingdom", "United States"],
+    "B": ["Bahrain", "Barbados", "Brazil", "Cayman Islands", "Chile", "China", "Colombia", "Cyprus", "Czechia", "Estonia", "Greece", "Hong Kong", "Indonesia", "Israel", "Jamaica", "Korea", "Kuwait", "Latvia", "Lithuania", "Malaysia", "Malta", "Mexico", "North Macedonia", "Oman", "Philippines", "Poland", "Puerto Rico", "Qatar", "Saudi Arabia", "Senegal", "Singapore", "Slovakia", "Slovenia", "South Africa", "Taiwan", "Thailand", "United Arab Emirates", "Uruguay"],
+    "default": "C"
+  },
+  "countries": ["India", "Argentina", "Australia", "Austria", "Bahrain", "Bangladesh", "Barbados", "Belgium", "Brazil", "Bulgaria", "Canada", "Cayman Islands", "Chile", "China", "Colombia", "Croatia", "Cyprus", "Czechia", "Denmark", "Egypt", "Estonia", "Finland", "France", "Germany", "Greece", "Hong Kong", "Hungary", "Iceland", "Indonesia", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kenya", "Korea", "Kuwait", "Latvia", "Lithuania", "Luxembourg", "Malaysia", "Malta", "Mexico", "Morocco", "Nepal", "Netherlands", "New Zealand", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Romania", "Saudi Arabia", "Senegal", "Serbia", "Singapore", "Slovakia", "Slovenia", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland", "Taiwan", "Thailand", "Turkey", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Vietnam", "Other"],
+  "emergingMarkets": ["India", "China", "Bangladesh", "Nepal", "Sri Lanka", "Pakistan", "Indonesia", "Vietnam", "Philippines", "Malaysia", "Thailand", "Egypt", "Kenya", "Nigeria", "South Africa", "Brazil", "Mexico", "Turkey", "Ukraine", "Romania", "Serbia", "Morocco", "Jordan", "Peru", "Argentina", "Colombia", "Chile", "Uruguay", "Bulgaria", "Latvia", "Lithuania", "North Macedonia", "Jamaica", "Cayman Islands", "Senegal"]
+}

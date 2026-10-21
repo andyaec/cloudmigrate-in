@@ -1,0 +1,28 @@
+{
+  "name": "cloudmigrate-in",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CloudMigrate.in — multi-cloud sales, assessment, migration, managed services, security assessment and POC practice site, with the Azure Partner Funding Advisor.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "validate:data": "node scripts/validate-incentives.mjs",
+    "prebuild": "node scripts/validate-incentives.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.21",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
