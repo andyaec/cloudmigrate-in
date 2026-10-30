@@ -47,6 +47,9 @@ export default async function ServicePage({ params }: { params: Promise<{ cloud:
               For Azure sellers: describe the deal — migration, new workloads, a subscription or tenant move, or a change of partner — pick the Azure services from the full
               catalogue, and see which Microsoft FY27 programmes can fund it, at what size, and what proof of execution you'll need.
             </p>
+            <p className="small muted" style={{ margin: "12px 0 0" }}>
+              Sales team access · <a href="/api/advisor-logout">Sign out</a>
+            </p>
           </div>
         </section>
         <div className="wrap">

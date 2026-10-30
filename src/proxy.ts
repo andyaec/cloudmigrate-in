@@ -1,13 +1,15 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { ADVISOR_COOKIE, ADVISOR_LOGIN_PATH, advisorToken, safeEqual } from "@/lib/advisor-auth";
 
 /**
- * Password gate for the Azure Funding Advisor.
- * The advisor summarises Microsoft partner-incentive terms that Microsoft marks
- * "Confidential — shared subject to partner agreements", so it fails closed:
- * outside `next dev` the page is unavailable until ADVISOR_PASSWORD is set
- * (optionally with ADVISOR_USER) in the deployment's environment variables.
+ * Gate for the Azure Funding Advisor, which summarises Microsoft partner-incentive
+ * terms marked "Confidential — shared subject to partner agreements".
+ * Signed-out visitors are redirected to the sign-in page rather than sent an HTTP
+ * auth challenge: background prefetches from other pages then follow a harmless
+ * redirect instead of popping a browser login dialog. Fails closed: outside
+ * `next dev` the advisor is unavailable until ADVISOR_PASSWORD is configured.
  */
-export function proxy(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const password = process.env.ADVISOR_PASSWORD;
   if (!password) {
     if (process.env.NODE_ENV === "development") return NextResponse.next();
@@ -16,29 +18,13 @@ export function proxy(request: NextRequest) {
       headers: { "Cache-Control": "no-store" },
     });
   }
-  const user = process.env.ADVISOR_USER;
-  const header = request.headers.get("authorization");
-  if (header?.startsWith("Basic ")) {
-    try {
-      const [u, ...rest] = atob(header.slice(6)).split(":");
-      if ((!user || u === user) && rest.join(":") === password) return NextResponse.next();
-    } catch {
-      /* malformed header — fall through to challenge */
-    }
+  const session = request.cookies.get(ADVISOR_COOKIE)?.value;
+  if (session && safeEqual(session, await advisorToken(process.env.ADVISOR_USER, password))) {
+    return NextResponse.next();
   }
-  // Only challenge real page visits. Background fetches (link prefetches, client-router
-  // navigations) would otherwise make the browser pop a login dialog on whatever page
-  // linked here, so refuse them silently; the router then falls back to a full page
-  // load, which is a navigation and gets the challenge below. Browsers mark visits
-  // with `Sec-Fetch-Mode: navigate`; requests without the header (e.g. curl) are challenged.
-  const mode = request.headers.get("sec-fetch-mode");
-  if ((mode && mode !== "navigate") || request.headers.has("rsc") || request.url.includes("_rsc=")) {
-    return new NextResponse(null, { status: 401, headers: { "Cache-Control": "no-store" } });
-  }
-  return new NextResponse("Authentication required", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="CloudMigrate Funding Advisor", charset="UTF-8"', "Cache-Control": "no-store" },
-  });
+  const res = NextResponse.redirect(new URL(ADVISOR_LOGIN_PATH, request.url), 307);
+  res.headers.set("Cache-Control", "no-store");
+  return res;
 }
 
 export const config = {

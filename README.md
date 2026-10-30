@@ -19,7 +19,7 @@ Open http://localhost:3000. `npm run build` validates the incentive data, then b
 
 1. Push this folder to a GitHub repository.
 2. In Vercel → **Add New → Project**, import the repository. The Next.js preset is detected automatically; no settings need changing.
-3. **Unlock the Funding Advisor for your team.** The advisor is locked by default on every deployment (it summarises incentive terms marked *Microsoft Confidential — shared subject to partner agreements*). In Project → Settings → Environment Variables add `ADVISOR_PASSWORD` (and optionally `ADVISOR_USER`) for Production and Preview, then redeploy. Visitors to `/clouds/azure/sales` get a browser login prompt; without the variable they see a "locked" message. `npm run dev` stays open for local work.
+3. **Unlock the Funding Advisor for your team.** The advisor is locked by default on every deployment (it summarises incentive terms marked *Microsoft Confidential — shared subject to partner agreements*). In Project → Settings → Environment Variables add `ADVISOR_PASSWORD` (and optionally `ADVISOR_USER`) for Production and Preview, then redeploy. Visitors to `/clouds/azure/sales` are sent to a sign-in page (`/advisor-login`); a correct sign-in sets a 30-day cookie, and changing the password signs everyone out. Without the variable the advisor shows a "locked" message. `npm run dev` stays open for local work.
 4. Project → Settings → Domains → add `cloudmigrate.in` and `www.cloudmigrate.in`, then create the DNS records Vercel shows at your registrar (an `A` record for the apex, a `CNAME` for `www`).
 5. Every push to `main` redeploys automatically.
 
