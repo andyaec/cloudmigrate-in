@@ -61,7 +61,7 @@ export default function ResourcesPage() {
                               {e.type.toUpperCase()}
                             </a>
                           ) : k === "commercial-checklist" && c.slug === "azure" ? (
-                            <Link href="/clouds/azure/sales" className="small">
+                            <Link prefetch={false} href="/clouds/azure/sales" className="small">
                               Funding Advisor
                             </Link>
                           ) : (

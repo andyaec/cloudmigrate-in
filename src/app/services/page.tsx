@@ -55,7 +55,7 @@ export default function ServicesPage() {
                 const sc = cloudContent[c.slug][s.slug];
                 const advisor = c.slug === "azure" && s.slug === "sales";
                 return (
-                  <Link key={c.slug} href={`/clouds/${c.slug}/${s.slug}`} className="tile cloud-tile" style={{ ["--cloud" as string]: c.color, minHeight: 0 }}>
+                  <Link key={c.slug} href={`/clouds/${c.slug}/${s.slug}`} prefetch={advisor ? false : undefined} className="tile cloud-tile" style={{ ["--cloud" as string]: c.color, minHeight: 0 }}>
                     <div className="tile-top">
                       <img className="vendor-logo" src={c.logo} alt="" style={{ height: 26 }} />
                       <span className="label">{c.short}</span>

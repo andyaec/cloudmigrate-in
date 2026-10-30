@@ -40,7 +40,7 @@ export function SiteFooter() {
             <h4>Tools</h4>
             <ul>
               <li>
-                <Link href="/clouds/azure/sales">Azure Funding Advisor</Link>
+                <Link prefetch={false} href="/clouds/azure/sales">Azure Funding Advisor</Link>
               </li>
               <li>
                 <Link href="/resources">Templates & checklists</Link>

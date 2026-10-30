@@ -8,7 +8,7 @@ export function ServiceNav({ cloud, active }: { cloud: CloudSlug; active?: Servi
         Overview
       </Link>
       {services.map((s) => (
-        <Link key={s.slug} href={`/clouds/${cloud}/${s.slug}`} aria-current={active === s.slug ? "page" : undefined}>
+        <Link key={s.slug} href={`/clouds/${cloud}/${s.slug}`} prefetch={cloud === "azure" && s.slug === "sales" ? false : undefined} aria-current={active === s.slug ? "page" : undefined}>
           <span className="num">{s.n}</span>
           {cloud === "azure" && s.slug === "sales" ? "Sales · Funding Advisor" : s.short}
         </Link>

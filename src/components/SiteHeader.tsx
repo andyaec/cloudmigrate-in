@@ -30,7 +30,7 @@ export function SiteHeader() {
               ))}
             </div>
           </details>
-          <Link href="/clouds/azure/sales">Azure Funding Advisor</Link>
+          <Link prefetch={false} href="/clouds/azure/sales">Azure Funding Advisor</Link>
           <Link href="/resources">Resources</Link>
           <Link href="/contact" className="btn small">
             Talk to an architect
@@ -46,7 +46,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <Link href="/services">All services</Link>
-            <Link href="/clouds/azure/sales">Azure Funding Advisor</Link>
+            <Link prefetch={false} href="/clouds/azure/sales">Azure Funding Advisor</Link>
             <Link href="/resources">Resources & templates</Link>
             <Link href="/contact">Contact</Link>
           </div>

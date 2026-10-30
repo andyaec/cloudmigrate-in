@@ -26,6 +26,15 @@ export function proxy(request: NextRequest) {
       /* malformed header — fall through to challenge */
     }
   }
+  // Only challenge real page visits. Background fetches (link prefetches, client-router
+  // navigations) would otherwise make the browser pop a login dialog on whatever page
+  // linked here, so refuse them silently; the router then falls back to a full page
+  // load, which is a navigation and gets the challenge below. Browsers mark visits
+  // with `Sec-Fetch-Mode: navigate`; requests without the header (e.g. curl) are challenged.
+  const mode = request.headers.get("sec-fetch-mode");
+  if ((mode && mode !== "navigate") || request.headers.has("rsc") || request.url.includes("_rsc=")) {
+    return new NextResponse(null, { status: 401, headers: { "Cache-Control": "no-store" } });
+  }
   return new NextResponse("Authentication required", {
     status: 401,
     headers: { "WWW-Authenticate": 'Basic realm="CloudMigrate Funding Advisor", charset="UTF-8"', "Cache-Control": "no-store" },

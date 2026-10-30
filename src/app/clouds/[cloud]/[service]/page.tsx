@@ -158,7 +158,7 @@ export default async function ServicePage({ params }: { params: Promise<{ cloud:
                   <p className="small" style={{ color: "#c4c7c2" }}>
                     Check which FY27 Frontier Accelerate programme can fund this engagement before you scope it.
                   </p>
-                  <Link href="/clouds/azure/sales" className="btn small" style={{ background: "var(--paper)", color: "var(--ink)" }}>
+                  <Link prefetch={false} href="/clouds/azure/sales" className="btn small" style={{ background: "var(--paper)", color: "var(--ink)" }}>
                     Open Funding Advisor
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ export default async function ServicePage({ params }: { params: Promise<{ cloud:
                 <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                   {others.map((o) => (
                     <li key={o.slug} style={{ padding: "6px 0", borderTop: "1px solid var(--rule)" }}>
-                      <Link href={`/clouds/${c.slug}/${o.slug}`}>
+                      <Link href={`/clouds/${c.slug}/${o.slug}`} prefetch={c.slug === "azure" && o.slug === "sales" ? false : undefined}>
                         <span className="mono tiny" style={{ color: "var(--accent)", marginRight: 8 }}>
                           {o.n}
                         </span>

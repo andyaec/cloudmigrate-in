@@ -60,7 +60,7 @@ export default async function CloudPage({ params }: { params: Promise<{ cloud: s
               const sc = content[s.slug];
               const isAdvisor = c.slug === "azure" && s.slug === "sales";
               return (
-                <Link key={s.slug} href={`/clouds/${c.slug}/${s.slug}`} className="tile cloud-tile">
+                <Link key={s.slug} href={`/clouds/${c.slug}/${s.slug}`} prefetch={isAdvisor ? false : undefined} className="tile cloud-tile">
                   <div className="tile-top">
                     <ServiceIcon slug={s.slug} />
                     <span className="mono tiny muted">

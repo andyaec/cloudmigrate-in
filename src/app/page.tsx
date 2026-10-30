@@ -34,7 +34,7 @@ export default function Home() {
               <Link href="/contact" className="btn accent">
                 Plan a migration
               </Link>
-              <Link href="/clouds/azure/sales" className="btn ghost">
+              <Link prefetch={false} href="/clouds/azure/sales" className="btn ghost">
                 Open the Azure Funding Advisor
               </Link>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
                 <span className="tile-go">Sales · Assessment · Migration · Managed · Security · POC →</span>
               </Link>
             ))}
-            <Link href="/clouds/azure/sales" className="tile" style={{ background: "var(--night)", color: "#f3f0e8" }}>
+            <Link prefetch={false} href="/clouds/azure/sales" className="tile" style={{ background: "var(--night)", color: "#f3f0e8" }}>
               <div className="tile-top">
                 <span className="label" style={{ color: "#8d938f" }}>
                   Tool
